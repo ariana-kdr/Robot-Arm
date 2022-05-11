@@ -3,6 +3,8 @@
 
 ***ACCEPT COLLABORATION INVITE BEFORE MAKING CHANGES IN THE REPOSITORY***
 
+Most of the files on Canvas under the Software module can be found in this repository already and can be downloaded directly as one .zip file. The exceptions to this are the driver file for the robot's camera, which is too large to be uploaded here, and an empty folder called 'measurements' (SPERTE_Installation\Examples\Models\Control_Engineering\measurements) that could not be made here since GitHub doesn't let you create an empty folder. 
+
 _PREREQUISITES_
 
   SPERTE
