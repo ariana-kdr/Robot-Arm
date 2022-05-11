@@ -1,0 +1,1359 @@
+Model {
+  Name			  "ref3ma_test"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Tue Apr 27 07:35:32 2004"
+  Creator		  "root"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "root"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Dec 17 09:40:15 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:12>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "100.0"
+  SolverMode		  "Auto"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  ".001"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Structure"
+  LimitDataPoints	  on
+  MaxDataPoints		  "10000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "wintarget.tlc"
+  RTWOptions		  " -aEnforceIntegerDowncast=1 -aExtMode=1 -aFoldNonRo"
+"lledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -aIncHierarchyInI"
+"ds=0 -aInlineInvariantSignals=0 -aInlineParameters=0 -aLocalBlockOutputs=1 -a"
+"LogVarNameModifier=\"rt_\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEliminatedS"
+"tatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "wt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ref3ma_test"
+    Location		    [319, 57, 952, 734]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "8-Axes Reference Generator"
+      Ports		      [2, 24]
+      Position		      [180, 87, 310, 498]
+      BackgroundColor	      "lightBlue"
+      OpenFcn		      "global ref_part1 ref_part2 ref_part3 ref_part4 "
+"ref_part5 ref_part6 ref_part7 ref_part8; R12_r3g_axes"
+      FontSize		      14
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"8-Axes Reference Generator"
+	Location		[320, 235, 851, 722]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Start/Stop"
+	  Position		  [490, 33, 520, 47]
+	  Orientation		  "left"
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ready"
+	  Position		  [490, 63, 520, 77]
+	  Orientation		  "left"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "8-Axes Reference Generator"
+	  Ports			  [8, 8]
+	  Position		  [215, 42, 355, 368]
+	  Orientation		  "left"
+	  BackgroundColor	  "green"
+	  OpenFcn		  "global ref_part1 ref_part2 ref_part3 ref_pa"
+"rt4; r3g_axes"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "4-Axes Ref3 Block"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "8-Axes Reference Generator"
+	    Location		    [395, 63, 846, 725]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [120, 58, 150, 72]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [120, 118, 150, 132]
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [120, 183, 150, 197]
+	      Port		      "3"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [120, 248, 150, 262]
+	      Port		      "4"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [120, 313, 150, 327]
+	      Port		      "5"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [120, 378, 150, 392]
+	      Port		      "6"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In7"
+	      Position		      [120, 443, 150, 457]
+	      Port		      "7"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In8"
+	      Position		      [120, 508, 150, 522]
+	      Port		      "8"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function"
+	      Ports		      [1, 1]
+	      Position		      [175, 44, 255, 86]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part1"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function1"
+	      Ports		      [1, 1]
+	      Position		      [175, 104, 255, 146]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part2"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function2"
+	      Ports		      [1, 1]
+	      Position		      [175, 169, 255, 211]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part3"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function3"
+	      Ports		      [1, 1]
+	      Position		      [175, 234, 255, 276]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part4"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function4"
+	      Ports		      [1, 1]
+	      Position		      [175, 299, 255, 341]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part5"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function5"
+	      Ports		      [1, 1]
+	      Position		      [175, 364, 255, 406]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part6"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function6"
+	      Ports		      [1, 1]
+	      Position		      [175, 429, 255, 471]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part7"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function7"
+	      Ports		      [1, 1]
+	      Position		      [175, 494, 255, 536]
+	      ShowName		      off
+	      FunctionName	      "ref3"
+	      Parameters	      "ref_part8"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [280, 58, 310, 72]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out2"
+	      Position		      [280, 118, 310, 132]
+	      Port		      "2"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out3"
+	      Position		      [280, 183, 310, 197]
+	      Port		      "3"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out4"
+	      Position		      [280, 248, 310, 262]
+	      Port		      "4"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out5"
+	      Position		      [280, 313, 310, 327]
+	      Port		      "5"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out6"
+	      Position		      [280, 378, 310, 392]
+	      Port		      "6"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out7"
+	      Position		      [280, 443, 310, 457]
+	      Port		      "7"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out8"
+	      Position		      [280, 508, 310, 522]
+	      Port		      "8"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "S-Function3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function3"
+	      SrcPort		      1
+	      DstBlock		      "Out4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "S-Function2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function2"
+	      SrcPort		      1
+	      DstBlock		      "Out3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "S-Function1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function1"
+	      SrcPort		      1
+	      DstBlock		      "Out2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "S-Function"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      DstBlock		      "S-Function4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function4"
+	      SrcPort		      1
+	      DstBlock		      "Out5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      DstBlock		      "S-Function5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function5"
+	      SrcPort		      1
+	      DstBlock		      "Out6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In7"
+	      SrcPort		      1
+	      DstBlock		      "S-Function6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function6"
+	      SrcPort		      1
+	      DstBlock		      "Out7"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In8"
+	      SrcPort		      1
+	      DstBlock		      "S-Function7"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-Function7"
+	      SrcPort		      1
+	      DstBlock		      "Out8"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 3]
+	  Position		  [80, 36, 85, 74]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 3]
+	  Position		  [115, 61, 120, 99]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux2"
+	  Ports			  [1, 3]
+	  Position		  [150, 86, 155, 124]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux3"
+	  Ports			  [1, 3]
+	  Position		  [180, 111, 185, 149]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux4"
+	  Ports			  [1, 3]
+	  Position		  [90, 206, 95, 244]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux5"
+	  Ports			  [1, 3]
+	  Position		  [120, 246, 125, 284]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux6"
+	  Ports			  [1, 3]
+	  Position		  [155, 286, 160, 324]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux7"
+	  Ports			  [1, 3]
+	  Position		  [180, 326, 185, 364]
+	  Orientation		  "left"
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  BusSelectionMode	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Ref Generator Switch"
+	  Ports			  [2, 1]
+	  Position		  [390, 26, 465, 84]
+	  Orientation		  "left"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Ref Generator Switch"
+	    Location		    [594, 393, 860, 489]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Start/Stop"
+	      Position		      [190, 28, 220, 42]
+	      Orientation	      "left"
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ready"
+	      Position		      [190, 48, 220, 62]
+	      Orientation	      "left"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      Ports		      [2, 1]
+	      Position		      [160, 26, 165, 64]
+	      Orientation	      "left"
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-Function"
+	      Ports		      [1, 1]
+	      Position		      [80, 30, 140, 60]
+	      Orientation	      "left"
+	      FunctionName	      "refswitch"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [25, 38, 55, 52]
+	      Orientation	      "left"
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Ready"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Start/Stop"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      DstBlock		      "S-Function"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc1"
+	  Position		  [25, 38, 55, 52]
+	  Orientation		  "left"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel1"
+	  Position		  [25, 48, 55, 62]
+	  Orientation		  "left"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos1"
+	  Position		  [25, 58, 55, 72]
+	  Orientation		  "left"
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc2"
+	  Position		  [60, 63, 90, 77]
+	  Orientation		  "left"
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel2"
+	  Position		  [60, 73, 90, 87]
+	  Orientation		  "left"
+	  Port			  "5"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos2"
+	  Position		  [60, 83, 90, 97]
+	  Orientation		  "left"
+	  Port			  "6"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc3"
+	  Position		  [95, 88, 125, 102]
+	  Orientation		  "left"
+	  Port			  "7"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel3"
+	  Position		  [95, 98, 125, 112]
+	  Orientation		  "left"
+	  Port			  "8"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos3"
+	  Position		  [95, 108, 125, 122]
+	  Orientation		  "left"
+	  Port			  "9"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc4"
+	  Position		  [125, 113, 155, 127]
+	  Orientation		  "left"
+	  Port			  "10"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel4"
+	  Position		  [125, 123, 155, 137]
+	  Orientation		  "left"
+	  Port			  "11"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos4"
+	  Position		  [125, 133, 155, 147]
+	  Orientation		  "left"
+	  Port			  "12"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc5"
+	  Position		  [35, 208, 65, 222]
+	  Orientation		  "left"
+	  Port			  "13"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel5"
+	  Position		  [35, 218, 65, 232]
+	  Orientation		  "left"
+	  Port			  "14"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos5"
+	  Position		  [35, 228, 65, 242]
+	  Orientation		  "left"
+	  Port			  "15"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc6"
+	  Position		  [65, 248, 95, 262]
+	  Orientation		  "left"
+	  Port			  "16"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel6"
+	  Position		  [65, 258, 95, 272]
+	  Orientation		  "left"
+	  Port			  "17"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos6"
+	  Position		  [65, 268, 95, 282]
+	  Orientation		  "left"
+	  Port			  "18"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc7"
+	  Position		  [95, 288, 125, 302]
+	  Orientation		  "left"
+	  Port			  "19"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel7"
+	  Position		  [95, 298, 125, 312]
+	  Orientation		  "left"
+	  Port			  "20"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos7"
+	  Position		  [95, 308, 125, 322]
+	  Orientation		  "left"
+	  Port			  "21"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc8"
+	  Position		  [115, 328, 145, 342]
+	  Orientation		  "left"
+	  Port			  "22"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel8"
+	  Position		  [115, 338, 145, 352]
+	  Orientation		  "left"
+	  Port			  "23"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos8"
+	  Position		  [115, 348, 145, 362]
+	  Orientation		  "left"
+	  Port			  "24"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  3
+	  DstBlock		  "Pos4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  2
+	  DstBlock		  "Vel4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  1
+	  DstBlock		  "Acc4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  3
+	  DstBlock		  "Pos3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  2
+	  DstBlock		  "Vel3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux2"
+	  SrcPort		  1
+	  DstBlock		  "Acc3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  3
+	  DstBlock		  "Pos2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Vel2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Acc2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ready"
+	  SrcPort		  1
+	  DstBlock		  "Ref Generator Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "Pos1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Vel1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Acc1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Start/Stop"
+	  SrcPort		  1
+	  DstBlock		  "Ref Generator Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  1
+	  Points		  [0, -10]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  2
+	  Points		  [0, -25]
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  3
+	  Points		  [0, -40]
+	  DstBlock		  "Demux2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  4
+	  Points		  [0, -55]
+	  DstBlock		  "Demux3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ref Generator Switch"
+	  SrcPort		  1
+	  Points		  [0, 0; -10, 0]
+	  Branch {
+	    Points		    [0, 25]
+	    Branch {
+	      Points		      [0, 25]
+	      Branch {
+		Points			[-5, 0]
+		DstBlock		"8-Axes Reference Generator"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[-5, 0; 0, 80]
+		Branch {
+		  DstBlock		  "8-Axes Reference Generator"
+		  DstPort		  4
+		}
+		Branch {
+		  Points		  [0, 40]
+		  Branch {
+		    DstBlock		    "8-Axes Reference Generator"
+		    DstPort		    5
+		  }
+		  Branch {
+		    Points		    [0, 35]
+		    Branch {
+		    DstBlock		    "8-Axes Reference Generator"
+		    DstPort		    6
+		    }
+		    Branch {
+		    Points		    [0, 45]
+		    Branch {
+		    DstBlock		    "8-Axes Reference Generator"
+		    DstPort		    7
+		    }
+		    Branch {
+		    DstBlock		    "8-Axes Reference Generator"
+		    DstPort		    8
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	    Branch {
+	      Points		      [-5, 0]
+	      DstBlock		      "8-Axes Reference Generator"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [-5, 0]
+	    DstBlock		    "8-Axes Reference Generator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  1
+	  DstBlock		  "Acc5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  2
+	  DstBlock		  "Vel5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux4"
+	  SrcPort		  3
+	  DstBlock		  "Pos5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  1
+	  DstBlock		  "Acc6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  2
+	  DstBlock		  "Vel6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux5"
+	  SrcPort		  3
+	  DstBlock		  "Pos6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux6"
+	  SrcPort		  1
+	  DstBlock		  "Acc7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux6"
+	  SrcPort		  2
+	  DstBlock		  "Vel7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux6"
+	  SrcPort		  3
+	  DstBlock		  "Pos7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux7"
+	  SrcPort		  1
+	  DstBlock		  "Acc8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux7"
+	  SrcPort		  2
+	  DstBlock		  "Vel8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux7"
+	  SrcPort		  3
+	  DstBlock		  "Pos8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  5
+	  DstBlock		  "Demux4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  6
+	  DstBlock		  "Demux5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  7
+	  DstBlock		  "Demux6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "8-Axes Reference Generator"
+	  SrcPort		  8
+	  DstBlock		  "Demux7"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [85, 175, 115, 205]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [85, 380, 115, 410]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [8, 1]
+      Position		      [485, 125, 495, 490]
+      ShowName		      off
+      Inputs		      "8"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [545, 294, 575, 326]
+      Floating		      off
+      Location		      [62, 381, 660, 628]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-0.1"
+      YMax		      "1.1"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "8-Axes Reference Generator"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "8-Axes Reference Generator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      3
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      6
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      9
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      12
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      15
+      DstBlock		      "Mux"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      18
+      DstBlock		      "Mux"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      21
+      DstBlock		      "Mux"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "8-Axes Reference Generator"
+      SrcPort		      24
+      DstBlock		      "Mux"
+      DstPort		      8
+    }
+    Annotation {
+      Position		      [239, 40]
+      Text		      "LOAD A REFERENCE TRAJECTORY BEFORE STARTING THE"
+" MODEL!"
+    }
+  }
+}
