@@ -1,0 +1,104 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   11 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "doneDoubleBufferReInit"\
+      Description  "DoubleBufferInitCheck"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_Robot_Student_2021_v1"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c3_Robot_Student_2021_v1"\
+      Path         "is_active_c3_Robot_Student_2021_v1"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Object_Detection"\
+      Description  "StateActiveChild"\
+      SFName       "is_Object_Detection"\
+      Path         "Object_Detection.is_Object_Detection"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_Object_Detection"\
+      Description  "StateIsActive"\
+      SFName       "is_active_Object_Detection"\
+      Path         "Object_Detection.is_active_Object_Detection"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Belt"\
+      Description  "StateActiveChild"\
+      SFName       "is_Belt"\
+      Path         "Belt.is_Belt"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_Belt"\
+      Description  "StateIsActive"\
+      SFName       "is_active_Belt"\
+      Path         "Belt.is_active_Belt"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Robot_Arm"\
+      Description  "StateActiveChild"\
+      SFName       "is_Robot_Arm"\
+      Path         "Robot_Arm.is_Robot_Arm"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_Robot_Arm"\
+      Description  "StateIsActive"\
+      SFName       "is_active_Robot_Arm"\
+      Path         "Robot_Arm.is_active_Robot_Arm"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_Vacuum"\
+      Description  "StateActiveChild"\
+      SFName       "is_Vacuum"\
+      Path         "Vacuum.is_Vacuum"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_active_Vacuum"\
+      Description  "StateIsActive"\
+      SFName       "is_active_Vacuum"\
+      Path         "Vacuum.is_active_Vacuum"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
