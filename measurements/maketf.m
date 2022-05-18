@@ -1,4 +1,5 @@
 figure()
-[h, hz] = tfestimate(Input,output,50,[],[],2048)
+[h, hz] = tfestimate(Input,output,hann(50),[],[],2048)
 sys = frd(h,hz)
 bode(sys)
+nyquist(sys)
