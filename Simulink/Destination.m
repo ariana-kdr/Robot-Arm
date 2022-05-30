@@ -39,8 +39,8 @@ x = fsolve(fun,x0);
 B = x;
 
 function F2 = root23d(x1)
-F2(3) = l_24*cos(double(x(1))) + l_45*cos(double(x(2))) - l_13*cos(x1(1)) - l_35*cos(x1(2));              %eqn3 solves for the width of both arms
-F2(4) = l_12 + l_24*sin(double(x(1))) + l_45*sin(double(x(2))) - l_13*sin(x1(1)) - l_35*sin(x1(2));       %eqn4 solves for the height of both arms
+F2(1) = l_24*cos(double(x(1))) + l_45*cos(double(x(2))) - l_13*cos(x1(1)) - l_35*cos(x1(2));              %eqn3 solves for the width of both arms
+F2(2) = l_12 + l_24*sin(double(x(1))) + l_45*sin(double(x(2))) - l_13*sin(x1(1)) - l_35*sin(x1(2));       %eqn4 solves for the height of both arms
 end
 
 fun = @root23d;
@@ -51,8 +51,8 @@ S_upper = fsolve(fun,x1);
 
 %convert symbolic variables into final numerical values
 X_rad_target(1,1) = double(S_lower(1));
-%if isempty(S_upper(1)) == 0
- %   X_rad_target(2,1) = double(S_upper(1));
-%end
+if isempty(S_upper(1)) == 0
+    X_rad_target(2,1) = double(S_upper(1));
+end
 Z_rad_target = double(B(1));
 end
