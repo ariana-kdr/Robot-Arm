@@ -24,8 +24,8 @@ imaqreset
 % Specify the HSV upper and lower bounds (in this case only the H-value)
 % Download the Slider_app to determine and save the HSV values
 
-hsv_y = 0.131; % middle value heu yellow colour
-hsv_b = 0.568; % middle value hue blue colour
+hsv_y = 0.166; % middle value heu yellow colour
+hsv_b = 0.558; % middle value hue blue colour
 hsv_r = 0.715; % middle value hue red colour
 hsv_p = 0.861; % middle value hue pink colour
 
@@ -58,14 +58,14 @@ color_space_settings = [lb_hsv_y, ub_hsv_y;
 % Blob Analysis settings
 % Minimum area for the blob analysis in pixels per colored block
 % This is to avoid blob analysis when the block is not fully in the frame
-min_blob_area_red = round((50*camera_calibration_pixels_per_mm)^2*0.5); 
-min_blob_area_blue = round((60*camera_calibration_pixels_per_mm)^2*0.5);
-min_blob_area_yellow = round((30*camera_calibration_pixels_per_mm)^2*0.5);
+min_blob_area_red = round((48*camera_calibration_pixels_per_mm)^2*0.5); 
+min_blob_area_blue = round((58*camera_calibration_pixels_per_mm)^2*0.5);
+min_blob_area_yellow = round((28*camera_calibration_pixels_per_mm)^2*0.5);
 
 % Create a matrix with the corresponding values
 min_blob_area_all_colors = [min_blob_area_red; min_blob_area_blue; min_blob_area_yellow];
 
-max_blob_area = 500000000;                                   % Maximum area for the blob analysis in pixels
+max_blob_area = round((70*camera_calibration_pixels_per_mm)^2*0.5);  % Maximum area for the blob analysis in pixels
 blob_eccentricity_max = 0.8;                                 % Specify the eccentricity threshold
 
 %% Camera variables
@@ -86,13 +86,12 @@ vidobj = vidobj.camera_setting(adapter_name, device_id, format, color_space, cam
 while true
     
     %Get all the parameters from Simulink
-    wanted_color = str2double(get_param(file_name_simulink + "/Controller/Color",'Value'));
+    % no longer needed wanted_color = str2double(get_param(file_name_simulink + "/Controller/Color",'Value'));
     plot_detection = str2double(get_param(file_name_simulink + "/Controller/Plot",'Value'));
     stop_detection = str2double(get_param(file_name_simulink + "/Controller/Stop",'Value'));
-    
+    %YELLOW - color 1
     % Set the correct blob variables
     vidobj = vidobj.set_blob_variable(min_blob_area_all_colors(wanted_color), max_blob_area, blob_eccentricity_max);
-    
     % Perform the object detection specified in video_object.m
     [vidobj, y_position_pixel, x_position_pixel, area_1, centroid_1, b_box_1, ecc_1, orientation_1]...
         = vidobj.perform_object_detection(color_space_settings(wanted_color,1),color_space_settings(wanted_color,2),plot_detection,file_name_simulink);
