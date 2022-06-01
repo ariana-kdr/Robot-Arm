@@ -22,7 +22,7 @@ l_35 = 130; l_46 = 120+65; l_12 = 165;
 h = 81;
 
 %define possible ranges
-lowerX = -0.5; upperX = 0.5;
+lowerX = -2; upperX = 2;
 
 
 eqn1 = l_24*cos(t_2) + l_46*cos(t_4) == Radius;      	                                %eqn1 equates the width of the arm to the desired radius
@@ -34,12 +34,13 @@ eqn3 = l_24*cos(double(B.t_2)) + l_45*cos(double(B.t_4)) == l_13*cos(t_1) + l_35
 eqn4 = l_12 + l_24*sin(double(B.t_2)) + l_45*sin(double(B.t_4)) == l_13*sin(t_1) + l_35*sin(t_3);       %eqn4 solves for the height of both arms
 
 S_lower = vpasolve(eqn3,eqn4,[t_1 t_3],[lowerX upperX; -2 2]);                                         %solve both equations simultaneously to find theta1 and theta2 
-S_upper = vpasolve(eqn3,eqn4,[t_1 t_3],[(S_lower.t_1+eps) upperX; -2 2]);
+%S_upper = vpasolve(eqn3,eqn4,[t_1 t_3],[(S_lower.t_1+eps) upperX; -2 2]);
 
 %convert symbolic variables into final numerical values
-X_rad_target(1,1) = double(S_lower.t_1);
-if isempty(S_upper.t_1) == 0
-    X_rad_target(2,1) = double(S_upper.t_1);
-end
-Z_rad_target = double(B.t_2);
+X_rad_target(1,1) = wrapToPi(double(S_lower.t_1));
+%if isempty(S_upper.t_1) == 0
+ %   X_rad_target(2,1) = double(S_upper.t_1);
+%end
+Z_rad_target = wrapToPi(double(B.t_2));
+R_rad_target = wrapToPi(R_rad_target);
 end
