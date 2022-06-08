@@ -10,7 +10,7 @@
 close all
 %% FILL IN THESE VALUES FOR EVERY DIFFERENT ROBOT-ARM SETUP AND MODEL
 % File name of the Simulink model to send the position coordinates toxq
-file_name_simulink = 'Robot_Student_2021_v1';
+file_name_simulink = 'Controller';
 
 % Calibration values robot-arm setup
 camera_calibration_x_pixels = 358.3444;
@@ -24,24 +24,15 @@ imaqreset
 % Specify the HSV upper and lower bounds (in this case only the H-value)
 % Download the Slider_app to determine and save the HSV values
 
-hsv_y = 0.166; % middle value heu yellow colour
-hsv_b = 0.558; % middle value hue blue colour, possibly change to 0.588
-hsv_r = 0.715; % middle value hue red colour
-hsv_p = 0.861; % middle value hue pink colour
+lb_hsv_r     = 0.989; % lower bound red spot
+ub_hsv_r     = 0.124; % upper bound red spot
 
-hue_range = 0.1; % range for hue values of the same colour 
+lb_hsv_b     = 0.479; % lower bound blue spot
+ub_hsv_b     = 0.756; % upper bound blue spot
 
-lb_hsv_y     = hsv_y - hue_range; % lower bound yellow spot
-ub_hsv_y     = hsv_y + hue_range; % upper bound yellow spot
+lb_hsv_y     = 0.126; % lower bound yellow spot
+ub_hsv_y     = 0.237; % upper bound yellow spot
 
-lb_hsv_r     = hsv_r - hue_range; % lower bound red spot
-ub_hsv_r     = hsv_r + hue_range; % upper bound red spot
-
-lb_hsv_b     = hsv_b - hue_range; % lower bound blue spot
-ub_hsv_b     = hsv_b + hue_range; % upper bound blue spot
-
-lb_hsv_p     = hsv_p - hue_range; % lower bound yellow spot
-ub_hsv_p     = hsv_p + hue_range; % upper bound yellow spot
 
 if exist('vidobj','var')
     vidobj.delete();
@@ -53,7 +44,8 @@ warning ('off','all');
 color_space_settings = [lb_hsv_y, ub_hsv_y;
     lb_hsv_r, ub_hsv_r;
     lb_hsv_b, ub_hsv_b;
-    lb_hsv_p, ub_hsv_p];
+%   lb_hsv_p, ub_hsv_p
+    ];
 
 % Blob Analysis settings
 % Minimum area for the blob analysis in pixels per colored block
