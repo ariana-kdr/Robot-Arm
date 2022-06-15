@@ -22,7 +22,8 @@ l_35 = 130; l_46 = 120+65; l_12 = 165;
 h = 81;
 
 %define possible ranges
-lowerX = -2; upperX = 2;
+lowerX = -0.5; 
+upperX = 0.5;
 
 
 eqn1 = l_24*cos(t_2) + l_46*cos(t_4) == Radius;      	                                %eqn1 equates the width of the arm to the desired radius
